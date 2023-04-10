@@ -99,7 +99,11 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QS3-X8-aH5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <pinchGestureRecognizer id="pRV-79-TFA"/>
+                <pinchGestureRecognizer id="pRV-79-TFA">
+                    <connections>
+                        <action selector="didPinch:" destination="MVb-p8-auR" id="AWB-Ru-Kuk"/>
+                    </connections>
+                </pinchGestureRecognizer>
                 <rotationGestureRecognizer id="I7U-DB-d0n"/>
                 <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="nIE-Fz-7b9"/>
             </objects>

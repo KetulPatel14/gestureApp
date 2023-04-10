@@ -12,7 +12,7 @@ class FourthViewController: UIViewController {
 
     private let myView: UIView = {
         let myView = UIView()
-        myView.backgroundColor = .systemPurple
+        myView.backgroundColor = UIColor.blue
         return myView
     }()
     private let size: CGFloat = 200
