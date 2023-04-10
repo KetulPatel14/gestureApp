@@ -13,6 +13,9 @@
 		414D8CAE29E4614400E2DEC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 414D8CAD29E4614400E2DEC3 /* Assets.xcassets */; };
 		414D8CB129E4614500E2DEC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 414D8CAF29E4614500E2DEC3 /* LaunchScreen.storyboard */; };
 		414D8CBC29E4614500E2DEC3 /* gestureApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D8CBB29E4614500E2DEC3 /* gestureApplicationUITests.swift */; };
+		414D8CCB29E463B500E2DEC3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D8CCA29E463B500E2DEC3 /* SecondViewController.swift */; };
+		414D8CCD29E463C500E2DEC3 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D8CCC29E463C500E2DEC3 /* ThirdViewController.swift */; };
+		414D8CCF29E463D700E2DEC3 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D8CCE29E463D700E2DEC3 /* FourthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		414D8CB729E4614500E2DEC3 /* gestureApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gestureApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		414D8CBB29E4614500E2DEC3 /* gestureApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gestureApplicationUITests.swift; sourceTree = "<group>"; };
 		414D8CBD29E4614500E2DEC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		414D8CCA29E463B500E2DEC3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		414D8CCC29E463C500E2DEC3 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		414D8CCE29E463D700E2DEC3 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,9 @@
 				414D8CAD29E4614400E2DEC3 /* Assets.xcassets */,
 				414D8CAF29E4614500E2DEC3 /* LaunchScreen.storyboard */,
 				414D8CB229E4614500E2DEC3 /* Info.plist */,
+				414D8CCA29E463B500E2DEC3 /* SecondViewController.swift */,
+				414D8CCC29E463C500E2DEC3 /* ThirdViewController.swift */,
+				414D8CCE29E463D700E2DEC3 /* FourthViewController.swift */,
 			);
 			path = gestureApplication;
 			sourceTree = "<group>";
@@ -197,8 +206,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414D8CCB29E463B500E2DEC3 /* SecondViewController.swift in Sources */,
 				414D8CA929E4613800E2DEC3 /* ViewController.swift in Sources */,
+				414D8CCD29E463C500E2DEC3 /* ThirdViewController.swift in Sources */,
 				414D8CA729E4613800E2DEC3 /* AppDelegate.swift in Sources */,
+				414D8CCF29E463D700E2DEC3 /* FourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
