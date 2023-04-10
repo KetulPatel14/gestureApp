@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1j-yk-sLZ">
-                                <rect key="frame" x="175" y="309" width="25" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1j-yk-sLZ">
+                                <rect key="frame" x="20" y="309" width="335" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -28,10 +28,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="a1j-yk-sLZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="245" id="JrW-5D-GXG"/>
-                            <constraint firstItem="a1j-yk-sLZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="175" id="JwZ-wy-aMn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a1j-yk-sLZ" secondAttribute="bottom" constant="310" id="Kh4-8Q-46e"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a1j-yk-sLZ" secondAttribute="trailing" constant="175" id="dx0-Kg-RHl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a1j-yk-sLZ" secondAttribute="trailing" constant="20" id="59l-oa-OcK"/>
+                            <constraint firstItem="a1j-yk-sLZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OxS-Kg-Jqm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
@@ -42,15 +40,29 @@
                     </view>
                     <navigationItem key="navigationItem" id="bap-K4-ytK"/>
                     <connections>
+                        <outlet property="myView" destination="8bC-Xf-vdC" id="Vxo-K9-A0t"/>
+                        <outlet property="tapCountLabel" destination="a1j-yk-sLZ" id="QZS-QH-TfQ"/>
                         <segue destination="XYP-cS-tsn" kind="show" identifier="showSecond" id="DTg-U0-nMQ"/>
                         <segue destination="i13-jc-2F5" kind="show" identifier="showThird" id="qnt-rG-zCP"/>
                         <segue destination="MVb-p8-auR" kind="show" identifier="showFourth" id="qJT-kn-Pbz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="nVx-l3-zMl"/>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="vcY-3c-0kA"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="RAB-j0-3Tc"/>
+                <tapGestureRecognizer id="nVx-l3-zMl">
+                    <connections>
+                        <action selector="didTap:" destination="BYZ-38-t0r" id="dQD-uH-t54"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="vcY-3c-0kA">
+                    <connections>
+                        <action selector="didLongPress:" destination="BYZ-38-t0r" id="UgY-Jd-XCz"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="RAB-j0-3Tc">
+                    <connections>
+                        <action selector="didPan:" destination="BYZ-38-t0r" id="Xzc-aY-DA4"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="460" y="116"/>
         </scene>
