@@ -18,11 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="nVx-l3-zMl" appends="YES" id="C20-mM-hRE"/>
+                            <outletCollection property="gestureRecognizers" destination="vcY-3c-0kA" appends="YES" id="6uP-iB-NHT"/>
+                            <outletCollection property="gestureRecognizers" destination="RAB-j0-3Tc" appends="YES" id="I8r-Kb-rAt"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="bap-K4-ytK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="nVx-l3-zMl"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="vcY-3c-0kA"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="RAB-j0-3Tc"/>
             </objects>
             <point key="canvasLocation" x="460" y="116"/>
         </scene>
@@ -49,10 +58,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="m9a-XC-GdQ"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="pRV-79-TFA" appends="YES" id="zXs-yC-MGM"/>
+                            <outletCollection property="gestureRecognizers" destination="I7U-DB-d0n" appends="YES" id="XaC-dM-MP7"/>
+                            <outletCollection property="gestureRecognizers" destination="nIE-Fz-7b9" appends="YES" id="nqx-Wm-1Yt"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QS3-X8-aH5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="pRV-79-TFA"/>
+                <rotationGestureRecognizer id="I7U-DB-d0n"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="nIE-Fz-7b9"/>
             </objects>
             <point key="canvasLocation" x="1454" y="987"/>
         </scene>
