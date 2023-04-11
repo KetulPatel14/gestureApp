@@ -104,8 +104,16 @@
                         <action selector="didPinch:" destination="MVb-p8-auR" id="AWB-Ru-Kuk"/>
                     </connections>
                 </pinchGestureRecognizer>
-                <rotationGestureRecognizer id="I7U-DB-d0n"/>
-                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="nIE-Fz-7b9"/>
+                <rotationGestureRecognizer id="I7U-DB-d0n">
+                    <connections>
+                        <action selector="didRotate:" destination="MVb-p8-auR" id="B1Y-TG-86W"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="nIE-Fz-7b9">
+                    <connections>
+                        <action selector="didEdgePan:" destination="MVb-p8-auR" id="dNP-pY-a58"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1454" y="987"/>
         </scene>

@@ -34,6 +34,24 @@ class FourthViewController: UIViewController {
             
         }
     }
+    @IBAction func didRotate(_ sender: UIRotationGestureRecognizer) {
+        if(sender.state == .changed){
+            myView.transform = CGAffineTransform(rotationAngle: sender.rotation)
+            print("Angle: \(sender.rotation)")
+            
+        }
+    }
+    
+    
+    @IBAction func didEdgePan(_ sender: UIScreenEdgePanGestureRecognizer) {
+        if(sender.state == .recognized){
+            print("Screen Edge Swipe")
+//            let scale = sender.scale
+//            myView.frame = CGRect(x: 0, y: 0, width: size, height: size)
+//            myView.center = view.center
+            
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
